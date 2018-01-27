@@ -4,12 +4,41 @@
   "description": "autocompliter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "env NODE_ENV=development webpack --config configs/webpack/webpack.dev.js",
+    "build:watch": "env NODE_ENV=development webpack --watch --config configs/webpack/webpack.dev.js",
+    "build:prod": "env NODE_ENV=production webpack -p --config configs/webpack/webpack.prod.js",
+    "serve": "env NODE_ENV=development $(npm bin)/webpack-dev-server --config configs/webpack/webpack.dev.js",
+    "clean:dist": "rm -fr ./_dist"
   },
   "keywords": [
     "test",
     "autocompliter"
   ],
   "author": "Mikhail Makhotkin",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.14.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-optimize": "^1.0.1",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "image-webpack-loader": "^4.0.0",
+    "json-loader": "^0.5.7",
+    "nib": "^1.1.2",
+    "stylus": "^0.54.5",
+    "stylus-relative-loader": "^3.4.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
 }

@@ -1,0 +1,11 @@
+{
+  "presets": [
+      [ "env", { "modules": false } ],
+      "react"
+  ],
+  "env": {
+    "production": {
+      "presets": ["react-optimize"]
+    }
+  }
+}
