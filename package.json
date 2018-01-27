@@ -1,0 +1,15 @@
+{
+  "name": "autocompliter-test-project",
+  "version": "0.0.1",
+  "description": "autocompliter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "autocompliter"
+  ],
+  "author": "Mikhail Makhotkin",
+  "license": "ISC"
+}
