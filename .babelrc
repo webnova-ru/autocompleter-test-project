@@ -1,5 +1,6 @@
 {
   "presets": [
+      "stage-1",
       [ "env", { "modules": false } ],
       "react"
   ],
@@ -7,5 +8,6 @@
     "production": {
       "presets": ["react-optimize"]
     }
-  }
+  },
+    "plugins": ["transform-class-properties"]
 }

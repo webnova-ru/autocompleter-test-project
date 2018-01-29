@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from 'components/app/app';
+import { App } from 'components';
 import './main.styl';
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+const appNode = document.querySelector('#app');
+if (appNode) {
+    ReactDOM.render(<App />, appNode);
+}
